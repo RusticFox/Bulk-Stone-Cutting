@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>Bulk Stone Cutting</name>
+<author>✬Rustic Fox✬</author>
+<url>https://ludeon.com/forums/index.php?topic=37787.0\</url>
+<targetVersion>0.18.1722</targetVersion>
+<description>
+A mod that allows you cut stone chuncks into blocks in bulk
+  
+Research
+  
+BulkStonecutting 600 Requires Stonecutting
+PoweredBulkStonecutting 1200 Requires BulkStonecutting
+
+Credits
+
+Mrofa - Art
+
+Version: 1.0.1
+</description>
+</ModMetaData>

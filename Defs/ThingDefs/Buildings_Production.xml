@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--Base Def-->	
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  <!--No Elec Workbench-->	
+ <ThingDef ParentName="BuildingBase">
+    <defName>BulkStonecuttersTable</defName>
+    <label>Bulk stonecutting table</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workbench to cut stone chuncks to blocks in bulk.</description>
+	<graphicData>
+		<texPath>Things/Building/Production/no_elec_bulkstonecutting</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3,1)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+	<costList>
+      <WoodLog>60</WoodLog>
+      <Steel>50</Steel>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+	<pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+	<inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+    <researchPrerequisites><li>BulkStonecutting</li></researchPrerequisites>
+ </ThingDef>
+   <!--Elec Workbench-->	
+ <ThingDef ParentName="BuildingBase">
+    <defName>BulkStonecuttersTableElec</defName>
+    <label>Powered bulk stonecutting table</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workbench to cut stone chuncks to blocks in bulk.</description>
+	<graphicData>
+		<texPath>Things/Building/Production/Elec_BulkStoneCutting_Bench</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3,1)</drawSize>
+	</graphicData>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+	<costList>
+      <WoodLog>120</WoodLog>
+      <Steel>350</Steel>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+	<pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+	<inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+            <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <startElectricalFires>true</startElectricalFires>
+            <basePowerConsumption>250</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+    <researchPrerequisites><li>PoweredBulkStonecutting</li></researchPrerequisites>
+ </ThingDef>
+</Defs>
