@@ -3,13 +3,24 @@
   <!--Base Def-->	
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <repairEffect>Repair</repairEffect>
 	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <Cleanliness>-5</Cleanliness>
+      <Mass>25</Mass>
+    </statBases>
   </ThingDef>
   <!--No Elec Workbench-->	
  <ThingDef ParentName="BuildingBase">
@@ -22,7 +33,6 @@
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(3,1)</drawSize>
 	</graphicData>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
 	<costList>
       <WoodLog>60</WoodLog>
       <Steel>50</Steel>
@@ -30,11 +40,6 @@
     <altitudeLayer>Building</altitudeLayer>
 	<fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
-    <statBases>
-      <WorkToBuild>1000</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
     <size>(3,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
@@ -68,7 +73,6 @@
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(3,1)</drawSize>
 	</graphicData>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
 	<costList>
       <WoodLog>120</WoodLog>
       <Steel>350</Steel>
@@ -76,11 +80,6 @@
     <altitudeLayer>Building</altitudeLayer>
 	<fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
-    <statBases>
-      <WorkToBuild>1000</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
     <size>(3,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
@@ -102,7 +101,6 @@
 			</li>
             <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
-            <startElectricalFires>true</startElectricalFires>
             <basePowerConsumption>250</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
