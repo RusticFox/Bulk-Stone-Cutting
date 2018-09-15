@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>[TWC]Cupro's Stones</modName>
+				<yourMod>Bulk Stone Cutting</yourMod>
+				<customMessageSuccess>Bulk Stone Cutting: Mod named "[TWC]Cupro's Stones" detected, Adding Recipes.</customMessageSuccess>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/Def[@Name="RF_BSC_DefInsertion"]</xpath>
+				<value>
+
+  <!--No Elec Defs-->	
+	<RecipeDef Name="MakeBulkStoneBlocksBaseCuproNoElec5" Abstract="True">
+		<jobString>Make bulk stone blocks.</jobString>
+		<workAmount>4800</workAmount>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTable</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef Name="MakeBulkStoneBlocksBaseCuproNoElec10" Abstract="True">
+		<jobString>Make bulk stone blocks.</jobString>
+		<workAmount>9600</workAmount>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTable</li>
+		</recipeUsers>	
+	</RecipeDef>
+  <!--Elec Workbench Defs-->	
+	<RecipeDef Name="MakeBulkStoneBlocksBaseCuproElec5" Abstract="True">
+		<jobString>Converting blocks to other blocks.</jobString>
+		<workAmount>2400</workAmount>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTableElec</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef Name="MakeBulkStoneBlocksBaseCuproElec10" Abstract="True">
+		<jobString>Converting blocks to other blocks.</jobString>
+		<workAmount>4800</workAmount>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTableElec</li>
+		</recipeUsers>	
+	</RecipeDef>
+  <!--No Elec Bulk Specialized 5-->
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeGabbroBlocks5</defName>
+		<label>make gabbro blocks (5)</label>
+		<description>Cuts gabbro chunks into usable gabbro blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGabbro>100</BlocksGabbro>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeSyeniteBlocks5</defName>
+		<label>make syenite blocks (5)</label>
+		<description>Cuts syenite chunks into usable syenite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSyenite>100</BlocksSyenite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeQuartziteBlocks5</defName>
+		<label>make quartzite blocks (5)</label>
+		<description>Cuts quartzite chunks into usable quartzite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksQuartzite>100</BlocksQuartzite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeGneissBlocks5</defName>
+		<label>make gneiss blocks (5)</label>
+		<description>Cuts gneiss chunks into usable gneiss blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGneiss>100</BlocksGneiss>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeSchistBlocks5</defName>
+		<label>make schist blocks (5)</label>
+		<description>Cuts schist chunks into usable schist blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSchist>100</BlocksSchist>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeClaystoneBlocks5</defName>
+		<label>make claystone blocks (5)</label>
+		<description>Cuts claystone chunks into usable claystone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksClaystone>100</BlocksClaystone>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeAndesiteBlocks5</defName>
+		<label>make andesite blocks (5)</label>
+		<description>Cuts andesite chunks into usable andesite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksAndesite>100</BlocksAndesite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeDioriteBlocks5</defName>
+		<label>make diorite blocks (5)</label>
+		<description>Cuts diorite chunks into usable diorite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDiorite>100</BlocksDiorite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakeDuniteBlocks5</defName>
+		<label>make dunite blocks (5)</label>
+		<description>Cuts dunite chunks into usable dunite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDunite>100</BlocksDunite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec5">
+		<defName>MakePegmatiteBlocks5</defName>
+		<label>make pegmatite blocks (5)</label>
+		<description>Cuts pegmatite chunks into usable pegmatite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksPegmatite>100</BlocksPegmatite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+  <!--No Elec Bulk Specialized 10-->
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeGabbroBlocks10</defName>
+		<label>make gabbro blocks (10)</label>
+		<description>Cuts gabbro chunks into usable gabbro blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGabbro>200</BlocksGabbro>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeSyeniteBlocks10</defName>
+		<label>make syenite blocks (10)</label>
+		<description>Cuts syenite chunks into usable syenite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSyenite>200</BlocksSyenite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeQuartziteBlocks10</defName>
+		<label>make quartzite blocks (10)</label>
+		<description>Cuts quartzite chunks into usable quartzite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksQuartzite>200</BlocksQuartzite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeGneissBlocks10</defName>
+		<label>make gneiss blocks (10)</label>
+		<description>Cuts gneiss chunks into usable gneiss blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGneiss>200</BlocksGneiss>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeSchistBlocks10</defName>
+		<label>make schist blocks (10)</label>
+		<description>Cuts schist chunks into usable schist blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSchist>200</BlocksSchist>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeClaystoneBlocks10</defName>
+		<label>make claystone blocks (10)</label>
+		<description>Cuts claystone chunks into usable claystone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksClaystone>200</BlocksClaystone>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeAndesiteBlocks10</defName>
+		<label>make andesite blocks (10)</label>
+		<description>Cuts andesite chunks into usable andesite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksAndesite>200</BlocksAndesite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeDioriteBlocks10</defName>
+		<label>make diorite blocks (10)</label>
+		<description>Cuts diorite chunks into usable diorite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDiorite>200</BlocksDiorite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakeDuniteBlocks10</defName>
+		<label>make dunite blocks (10)</label>
+		<description>Cuts dunite chunks into usable dunite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDunite>200</BlocksDunite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproNoElec10">
+		<defName>MakePegmatiteBlocks10</defName>
+		<label>make pegmatite blocks (10)</label>
+		<description>Cuts pegmatite chunks into usable pegmatite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksPegmatite>200</BlocksPegmatite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+  <!--Elec Bulk Specialized 5-->
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeGabbroBlocks5E</defName>
+		<label>make gabbro blocks (5)</label>
+		<description>Cuts gabbro chunks into usable gabbro blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGabbro>100</BlocksGabbro>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeSyeniteBlocks5E</defName>
+		<label>make syenite blocks (5)</label>
+		<description>Cuts syenite chunks into usable syenite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSyenite>100</BlocksSyenite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeQuartziteBlocks5E</defName>
+		<label>make quartzite blocks (5)</label>
+		<description>Cuts quartzite chunks into usable quartzite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksQuartzite>100</BlocksQuartzite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeGneissBlocks5E</defName>
+		<label>make gneiss blocks (5)</label>
+		<description>Cuts gneiss chunks into usable gneiss blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGneiss>100</BlocksGneiss>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeSchistBlocks5E</defName>
+		<label>make schist blocks (5)</label>
+		<description>Cuts schist chunks into usable schist blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSchist>100</BlocksSchist>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeClaystoneBlocks5E</defName>
+		<label>make claystone blocks (5)</label>
+		<description>Cuts claystone chunks into usable sclaystone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksClaystone>100</BlocksClaystone>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeAndesiteBlocks5E</defName>
+		<label>make andesite blocks (5)</label>
+		<description>Cuts andesite chunks into usable andesite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksAndesite>100</BlocksAndesite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeDioriteBlocks5E</defName>
+		<label>make diorite blocks (5)</label>
+		<description>Cuts diorite chunks into usable diorite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDiorite>100</BlocksDiorite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakeDuniteBlocks5E</defName>
+		<label>make dunite blocks (5)</label>
+		<description>Cuts dunite chunks into usable dunite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDunite>100</BlocksDunite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec5">
+		<defName>MakePegmatiteBlocks5E</defName>
+		<label>make pegmatite blocks (5)</label>
+		<description>Cuts pegmatite chunks into usable pegmatite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksPegmatite>100</BlocksPegmatite>
+        </products>
+		<skillRequirements>
+				<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+  <!--Elec Bulk Specialized 10-->
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeGabbroBlocks10E</defName>
+		<label>make gabbro blocks (10)</label>
+		<description>Cuts gabbro chunks into usable gabbro blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGabbro</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGabbro>200</BlocksGabbro>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeSyeniteBlocks10E</defName>
+		<label>make syenite blocks (10)</label>
+		<description>Cuts syenite chunks into usable syenite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSyenite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSyenite>200</BlocksSyenite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeQuartziteBlocks10E</defName>
+		<label>make quartzite blocks (10)</label>
+		<description>Cuts quartzite chunks into usable quartzite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkQuartzite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksQuartzite>200</BlocksQuartzite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeGneissBlocks10E</defName>
+		<label>make gneiss blocks (10)</label>
+		<description>Cuts gneiss chunks into usable gneiss blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGneiss</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGneiss>200</BlocksGneiss>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeSchistBlocks10E</defName>
+		<label>make schist blocks (10)</label>
+		<description>Cuts schist chunks into usable schist blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSchist</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSchist>200</BlocksSchist>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeClaystoneBlocks10E</defName>
+		<label>make claystone blocks (10)</label>
+		<description>Cuts claystone chunks into usable claystone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkClaystone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksClaystone>200</BlocksClaystone>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeAndesiteBlocks10E</defName>
+		<label>make andesite blocks (10)</label>
+		<description>Cuts andesite chunks into usable andesite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkAndesite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksAndesite>200</BlocksAndesite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeDioriteBlocks10E</defName>
+		<label>make diorite blocks (10)</label>
+		<description>Cuts diorite chunks into usable diorite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDiorite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDiorite>200</BlocksDiorite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakeDuniteBlocks10E</defName>
+		<label>make dunite blocks (10)</label>
+		<description>Cuts dunite chunks into usable dunite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkDunite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksDunite>200</BlocksDunite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseCuproElec10">
+		<defName>MakePegmatiteBlocks10E</defName>
+		<label>make pegmatite blocks (10)</label>
+		<description>Cuts pegmatite chunks into usable pegmatite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkPegmatite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksPegmatite>200</BlocksPegmatite>
+        </products>
+		<skillRequirements>
+				<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>				
+				
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

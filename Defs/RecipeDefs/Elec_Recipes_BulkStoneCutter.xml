@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Elec Bulk Specialized 5-->
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec">
+		<defName>MakeSlateBlocks5E</defName>
+		<label>make slate blocks (5)</label>
+		<description>Cuts slate chunks into usable slate blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlate</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSlate</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSlate>100</BlocksSlate>
+        </products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec">
+		<defName>MakeGraniteBlocks5E</defName>
+		<label>make granite blocks (5)</label>
+		<description>Cuts granite chunks into usable granite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGranite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGranite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGranite>100</BlocksGranite>
+        </products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec">
+		<defName>MakeMarbleBlocks5E</defName>
+		<label>make marble blocks (5)</label>
+		<description>Cuts marble chunks into usable marble blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkMarble</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkMarble</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksMarble>100</BlocksMarble>
+        </products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec">
+		<defName>MakeLimestoneBlocks5E</defName>
+		<label>make limestone blocks (5)</label>
+		<description>Cuts limestone chunks into usable limestone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksLimestone>100</BlocksLimestone>
+        </products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec">
+		<defName>MakeSandstoneBlocks5E</defName>
+		<label>make sandstone blocks (5)</label>
+		<description>Cuts sandstone chunks into usable sandstone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSandstone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSandstone>100</BlocksSandstone>
+        </products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+  <!--Elec Bulk Specialized 10-->
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeSlateBlocks10E</defName>
+		<label>make slate blocks (10)</label>
+		<description>Cuts slate chunks into usable slate blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlate</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSlate</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSlate>200</BlocksSlate>
+        </products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeGraniteBlocks10E</defName>
+		<label>make granite blocks (10)</label>
+		<description>Cuts granite chunks into usable granite blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGranite</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkGranite</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksGranite>200</BlocksGranite>
+        </products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeMarbleBlocks10E</defName>
+		<label>make marble blocks (10)</label>
+		<description>Cuts marble chunks into usable marble blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkMarble</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkMarble</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksMarble>200</BlocksMarble>
+        </products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeLimestoneBlocks10E</defName>
+		<label>make limestone blocks (10)</label>
+		<description>Cuts limestone chunks into usable limestone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksLimestone>200</BlocksLimestone>
+        </products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeSandstoneBlocks10E</defName>
+		<label>make sandstone blocks (10)</label>
+		<description>Cuts sandstone chunks into usable sandstone blocks in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+					<thingDefs>
+						<li>ChunkSandstone</li>
+					</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+             <BlocksSandstone>200</BlocksSandstone>
+        </products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

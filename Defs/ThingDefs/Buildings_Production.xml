@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <!--Base Def-->	
-  <ThingDef Name="BuildingBase" Abstract="True">
+  <ThingDef Name="RFBuildingBaseBSC" Abstract="True">
     <category>Building</category>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <selectable>true</selectable>
@@ -23,7 +24,7 @@
     </statBases>
   </ThingDef>
   <!--No Elec Workbench-->	
- <ThingDef ParentName="BuildingBase">
+ <ThingDef ParentName="RFBuildingBaseBSC">
     <defName>BulkStonecuttersTable</defName>
     <label>Bulk stonecutting table</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -63,7 +64,7 @@
     <researchPrerequisites><li>BulkStonecutting</li></researchPrerequisites>
  </ThingDef>
    <!--Elec Workbench-->	
- <ThingDef ParentName="BuildingBase">
+ <ThingDef ParentName="RFBuildingBaseBSC">
     <defName>BulkStonecuttersTableElec</defName>
     <label>Powered bulk stonecutting table</label>
     <thingClass>Building_WorkTable</thingClass>
@@ -110,4 +111,5 @@
 		</comps>
     <researchPrerequisites><li>PoweredBulkStonecutting</li></researchPrerequisites>
  </ThingDef>
+ 
 </Defs>
