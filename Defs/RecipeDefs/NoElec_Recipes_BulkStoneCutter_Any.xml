@@ -22,9 +22,6 @@
 				<li>StoneChunks</li>
 			</categories>
 		</fixedIngredientFilter>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
 		<specialProducts>
 			<li>Butchery</li>
 		</specialProducts>
@@ -49,9 +46,6 @@
 				<li>StoneChunks</li>
 			</categories>
 		</fixedIngredientFilter>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 		<specialProducts>
 			<li>Butchery</li>
 		</specialProducts>

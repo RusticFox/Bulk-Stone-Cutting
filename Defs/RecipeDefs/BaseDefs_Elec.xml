@@ -4,9 +4,8 @@
   <!--Elec Workbench Defs-->	
 	<RecipeDef Name="MakeBulkStoneBlocksBaseElec" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>2400</workAmount>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<workAmount>6400</workAmount>
+        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
@@ -16,9 +15,8 @@
 	</RecipeDef>
 	<RecipeDef Name="MakeBulkStoneBlocksBaseElec10" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>4800</workAmount>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<workAmount>12800</workAmount>
+        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
@@ -28,9 +26,8 @@
 	</RecipeDef>
 	<RecipeDef Name="MakeBulkStoneBlocksBaseElecAny" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>2400</workAmount>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<workAmount>6400</workAmount>
+        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
@@ -40,9 +37,8 @@
 	</RecipeDef>
 	<RecipeDef Name="MakeBulkStoneBlocksBaseElecAny10" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>4800</workAmount>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<workAmount>12800</workAmount>
+        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>

@@ -24,9 +24,6 @@
         <products>
              <BlocksSlate>100</BlocksSlate>
         </products>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
 		<defName>MakeGraniteBlocks5</defName>
@@ -50,9 +47,6 @@
         <products>
              <BlocksGranite>100</BlocksGranite>
         </products>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
 		<defName>MakeMarbleBlocks5</defName>
@@ -76,9 +70,6 @@
         <products>
              <BlocksMarble>100</BlocksMarble>
         </products>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
 		<defName>MakeLimestoneBlocks5</defName>
@@ -102,9 +93,6 @@
         <products>
              <BlocksLimestone>100</BlocksLimestone>
         </products>
-		<skillRequirements>
-			<Crafting>4</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
 		<defName>MakeSandstoneBlocks5</defName>
@@ -128,9 +116,6 @@
         <products>
              <BlocksSandstone>100</BlocksSandstone>
         </products>
-		<skillRequirements>
-		    <Crafting>4</Crafting>
-		</skillRequirements>
 	</RecipeDef>
   <!--No Elec Bulk Specialized 10-->
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
@@ -155,9 +140,6 @@
         <products>
              <BlocksSlate>200</BlocksSlate>
         </products>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
 		<defName>MakeGraniteBlocks10</defName>
@@ -181,9 +163,6 @@
         <products>
              <BlocksGranite>200</BlocksGranite>
         </products>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
 		<defName>MakeMarbleBlocks10</defName>
@@ -207,9 +186,6 @@
         <products>
              <BlocksMarble>200</BlocksMarble>
         </products>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
 		<defName>MakeLimestoneBlocks10</defName>
@@ -233,9 +209,6 @@
         <products>
              <BlocksLimestone>200</BlocksLimestone>
         </products>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
 		<defName>MakeSandstoneBlocks10</defName>
@@ -259,9 +232,6 @@
         <products>
              <BlocksSandstone>200</BlocksSandstone>
         </products>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 	</RecipeDef>
 	
 </Defs>

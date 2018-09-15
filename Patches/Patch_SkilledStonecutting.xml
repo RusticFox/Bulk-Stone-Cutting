@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Skilled Stonecutting</modName>
+				<yourMod>Bulk Stone Cutting</yourMod>
+				<customMessageSuccess>Bulk Stone Cutting: Mod named "Skilled Stonecutting" detected, Adding Patch.</customMessageSuccess>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElec"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElec"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElec10"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElec10"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElecAny"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElecAny"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElecAny10"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseElecAny10"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElec"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElec"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElec10"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElec10"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElecAny"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElecAny"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElecAny10"]</xpath>
+		        <value>
+	        	    <workSkill>Crafting</workSkill>
+	       		    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+		        </value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[@Name="MakeBulkStoneBlocksBaseNoElecAny10"]/workSpeedStat</xpath>
+		        <value>
+	       		    <workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		        </value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
