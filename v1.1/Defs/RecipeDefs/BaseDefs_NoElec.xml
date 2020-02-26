@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--No Elec Defs-->	
+	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElec" Abstract="True">
+		<jobString>Make bulk stone blocks.</jobString>
+		<workAmount>8000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTable</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElec10" Abstract="True">
+		<jobString>Make bulk stone blocks.</jobString>
+		<workAmount>16000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTable</li>
+		</recipeUsers>	
+	</RecipeDef>
+	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElecAny" Abstract="True">
+		<jobString>Make bulk stone blocks.</jobString>
+		<workAmount>8000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTable</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElecAny10" Abstract="True">
+		<jobString>Make bulk stone blocks.</jobString>
+		<workAmount>16000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<li>BulkStonecuttersTable</li>
+		</recipeUsers>	
+	</RecipeDef>
+	
+</Defs>
