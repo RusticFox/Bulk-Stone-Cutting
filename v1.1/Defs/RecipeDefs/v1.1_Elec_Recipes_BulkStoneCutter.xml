@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--No Elec Bulk Specialized 5-->
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
-		<defName>MakeSlateBlocks5</defName>
+  <!--Elec Bulk Specialized 5-->
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec">
+		<defName>MakeSlateBlocks5E</defName>
 		<label>make slate blocks (5)</label>
 		<description>Cuts slate chunks into usable slate blocks in bulk.</description>
 		<ingredients>
@@ -25,8 +25,8 @@
              <BlocksSlate>100</BlocksSlate>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
-		<defName>MakeGraniteBlocks5</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec">
+		<defName>MakeGraniteBlocks5E</defName>
 		<label>make granite blocks (5)</label>
 		<description>Cuts granite chunks into usable granite blocks in bulk.</description>
 		<ingredients>
@@ -48,8 +48,8 @@
              <BlocksGranite>100</BlocksGranite>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
-		<defName>MakeMarbleBlocks5</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec">
+		<defName>MakeMarbleBlocks5E</defName>
 		<label>make marble blocks (5)</label>
 		<description>Cuts marble chunks into usable marble blocks in bulk.</description>
 		<ingredients>
@@ -71,8 +71,8 @@
              <BlocksMarble>100</BlocksMarble>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
-		<defName>MakeLimestoneBlocks5</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec">
+		<defName>MakeLimestoneBlocks5E</defName>
 		<label>make limestone blocks (5)</label>
 		<description>Cuts limestone chunks into usable limestone blocks in bulk.</description>
 		<ingredients>
@@ -94,8 +94,8 @@
              <BlocksLimestone>100</BlocksLimestone>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec">
-		<defName>MakeSandstoneBlocks5</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec">
+		<defName>MakeSandstoneBlocks5E</defName>
 		<label>make sandstone blocks (5)</label>
 		<description>Cuts sandstone chunks into usable sandstone blocks in bulk.</description>
 		<ingredients>
@@ -117,9 +117,9 @@
              <BlocksSandstone>100</BlocksSandstone>
         </products>
 	</RecipeDef>
-  <!--No Elec Bulk Specialized 10-->
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
-		<defName>MakeSlateBlocks10</defName>
+  <!--Elec Bulk Specialized 10-->
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeSlateBlocks10E</defName>
 		<label>make slate blocks (10)</label>
 		<description>Cuts slate chunks into usable slate blocks in bulk.</description>
 		<ingredients>
@@ -141,8 +141,8 @@
              <BlocksSlate>200</BlocksSlate>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
-		<defName>MakeGraniteBlocks10</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeGraniteBlocks10E</defName>
 		<label>make granite blocks (10)</label>
 		<description>Cuts granite chunks into usable granite blocks in bulk.</description>
 		<ingredients>
@@ -164,8 +164,8 @@
              <BlocksGranite>200</BlocksGranite>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
-		<defName>MakeMarbleBlocks10</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeMarbleBlocks10E</defName>
 		<label>make marble blocks (10)</label>
 		<description>Cuts marble chunks into usable marble blocks in bulk.</description>
 		<ingredients>
@@ -187,8 +187,8 @@
              <BlocksMarble>200</BlocksMarble>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
-		<defName>MakeLimestoneBlocks10</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeLimestoneBlocks10E</defName>
 		<label>make limestone blocks (10)</label>
 		<description>Cuts limestone chunks into usable limestone blocks in bulk.</description>
 		<ingredients>
@@ -210,8 +210,8 @@
              <BlocksLimestone>200</BlocksLimestone>
         </products>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseNoElec10">
-		<defName>MakeSandstoneBlocks10</defName>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElec10">
+		<defName>MakeSandstoneBlocks10E</defName>
 		<label>make sandstone blocks (10)</label>
 		<description>Cuts sandstone chunks into usable sandstone blocks in bulk.</description>
 		<ingredients>

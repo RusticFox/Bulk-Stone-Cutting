@@ -25,7 +25,7 @@
   </ThingDef>
   <!--No Elec Workbench-->	
  <ThingDef ParentName="RFBuildingBaseBSC">
-    <defName>BulkStonecuttersTable</defName>
+    <defName>RF_BSC_BulkStonecuttersTable</defName>
     <label>Bulk stonecutting table</label>
     <thingClass>Building_WorkTable</thingClass>
     <description>A workbench to cut stone chuncks to blocks in bulk.</description>
@@ -61,11 +61,11 @@
 				</linkableFacilities>
 			</li>
 		</comps>
-    <researchPrerequisites><li>BulkStonecutting</li></researchPrerequisites>
+    <researchPrerequisites><li>RF_BSC_BulkStonecutting</li></researchPrerequisites>
  </ThingDef>
    <!--Elec Workbench-->	
  <ThingDef ParentName="RFBuildingBaseBSC">
-    <defName>BulkStonecuttersTableElec</defName>
+    <defName>RF_BSC_BulkStonecuttersTableElec</defName>
     <label>Powered bulk stonecutting table</label>
     <thingClass>Building_WorkTable</thingClass>
     <description>A workbench to cut stone chuncks to blocks in bulk.</description>
@@ -106,7 +106,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
 		</comps>
-    <researchPrerequisites><li>PoweredBulkStonecutting</li></researchPrerequisites>
+    <researchPrerequisites><li>RF_BSC_PoweredBulkStonecutting</li></researchPrerequisites>
  </ThingDef>
  
 </Defs>

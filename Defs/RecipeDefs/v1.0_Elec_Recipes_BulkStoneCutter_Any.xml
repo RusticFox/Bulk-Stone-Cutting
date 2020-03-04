@@ -2,7 +2,7 @@
 <Defs>
 
   <!--Elec Any-->	
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElecAny">
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElecAny">
 		<defName>MakeStoneBlocksAny5E</defName>
 		<label>make any stone blocks (5)</label>
 		<description>Cuts rock chunks into usable stone blocks in bulk.</description>
@@ -26,7 +26,7 @@
 			<li>Butchery</li>
 		</specialProducts>
 	</RecipeDef>
-	<RecipeDef ParentName="MakeBulkStoneBlocksBaseElecAny10">
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElecAny10">
 		<defName>MakeStoneBlocksAny10E</defName>
 		<label>make any stone blocks (10)</label>
 		<description>Cuts rock chunks into usable stone blocks in bulk.</description>

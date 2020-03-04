@@ -2,48 +2,48 @@
 <Defs>
 
   <!--No Elec Defs-->	
-	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElec" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseNoElec" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>8000</workAmount>
+		<workAmount>7200</workAmount>
         <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTable</li>
+			<li>RF_BSC_BulkStonecuttersTable</li>
 		</recipeUsers>
 	</RecipeDef>
-	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElec10" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseNoElec10" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>16000</workAmount>
+		<workAmount>14400</workAmount>
         <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTable</li>
+			<li>RF_BSC_BulkStonecuttersTable</li>
 		</recipeUsers>	
 	</RecipeDef>
-	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElecAny" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseNoElecAny" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>8000</workAmount>
+		<workAmount>7200</workAmount>
         <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>20</targetCountAdjustment>
+		<targetCountAdjustment>100</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTable</li>
+			<li>RF_BSC_BulkStonecuttersTable</li>
 		</recipeUsers>
 	</RecipeDef>
-	<RecipeDef Name="MakeBulkStoneBlocksBaseNoElecAny10" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseNoElecAny10" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
-		<workAmount>16000</workAmount>
+		<workAmount>14400</workAmount>
         <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>20</targetCountAdjustment>
+		<targetCountAdjustment>200</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTable</li>
+			<li>RF_BSC_BulkStonecuttersTable</li>
 		</recipeUsers>	
 	</RecipeDef>
 	

@@ -2,13 +2,13 @@
 <Defs>
   <!--No Elec Work Giver-->	
 <WorkGiverDef>
-    <defName>DoBillsBulkCutStone</defName>
+    <defName>RF_BSC_DoBillsBulkCutStone</defName>
 	<label>bulk cut stone</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
 	<priorityInType>110</priorityInType>
 	<fixedBillGiverDefs>
-		<li>BulkStonecuttersTable</li>
+		<li>RF_BSC_BulkStonecuttersTable</li>
 	</fixedBillGiverDefs>
 	<verb>Craft</verb>
     <gerund>Crafting</gerund>
@@ -19,13 +19,13 @@
   </WorkGiverDef>
   <!--Elec Work Giver-->	
 <WorkGiverDef>
-    <defName>DoBillsBulkCutStoneElec</defName>
+    <defName>RF_BSC_DoBillsBulkCutStoneElec</defName>
 	<label>bulk cut stone</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
 	<priorityInType>110</priorityInType>
 	<fixedBillGiverDefs>
-		<li>BulkStonecuttersTableElec</li>
+		<li>RF_BSC_BulkStonecuttersTableElec</li>
 	</fixedBillGiverDefs>
 	<verb>Craft</verb>
     <gerund>Crafting</gerund>

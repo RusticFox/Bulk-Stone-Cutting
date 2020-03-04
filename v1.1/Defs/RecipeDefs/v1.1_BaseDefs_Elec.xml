@@ -2,48 +2,48 @@
 <Defs>
 
   <!--Elec Workbench Defs-->	
-	<RecipeDef Name="MakeBulkStoneBlocksBaseElec" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseElec" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
 		<workAmount>6400</workAmount>
-        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTableElec</li>
+			<li>RF_BSC_BulkStonecuttersTableElec</li>
 		</recipeUsers>
 	</RecipeDef>
-	<RecipeDef Name="MakeBulkStoneBlocksBaseElec10" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseElec10" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
 		<workAmount>12800</workAmount>
-        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTableElec</li>
+			<li>RF_BSC_BulkStonecuttersTableElec</li>
 		</recipeUsers>	
 	</RecipeDef>
-	<RecipeDef Name="MakeBulkStoneBlocksBaseElecAny" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseElecAny" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
 		<workAmount>6400</workAmount>
-        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTableElec</li>
+			<li>RF_BSC_BulkStonecuttersTableElec</li>
 		</recipeUsers>
 	</RecipeDef>
-	<RecipeDef Name="MakeBulkStoneBlocksBaseElecAny10" Abstract="True">
+	<RecipeDef Name="RF_BSC_MakeBulkStoneBlocksBaseElecAny10" Abstract="True">
 		<jobString>Make bulk stone blocks.</jobString>
 		<workAmount>12800</workAmount>
-        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
-			<li>BulkStonecuttersTableElec</li>
+			<li>RF_BSC_BulkStonecuttersTableElec</li>
 		</recipeUsers>	
 	</RecipeDef>
 	
