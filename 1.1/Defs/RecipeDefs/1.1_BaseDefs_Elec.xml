@@ -30,7 +30,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>20</targetCountAdjustment>
+		<targetCountAdjustment>100</targetCountAdjustment>
 		<recipeUsers>
 			<li>RF_BSC_BulkStonecuttersTableElec</li>
 		</recipeUsers>
@@ -41,7 +41,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>20</targetCountAdjustment>
+		<targetCountAdjustment>200</targetCountAdjustment>
 		<recipeUsers>
 			<li>RF_BSC_BulkStonecuttersTableElec</li>
 		</recipeUsers>	

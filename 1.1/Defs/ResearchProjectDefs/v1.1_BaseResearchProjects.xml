@@ -17,7 +17,7 @@
   <!--Elec Workbench Research-->	
 	<ResearchProjectDef>
 		<defName>RF_BSC_PoweredBulkStonecutting</defName>
-		<label>Powered Bulk Stonecutting</label>
+		<label>Powered bulk Stonecutting</label>
 		<description>Allows you to cut chunks into blocks in bulk</description>
 		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>

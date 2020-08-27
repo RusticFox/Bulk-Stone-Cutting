@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Elec Any-->	
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElecAny">
+		<defName>MakeStoneBlocksAny5E</defName>
+		<label>make any stone blocks (5)</label>
+		<description>Cuts rock chunks into usable stone blocks in bulk.</description>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+	</RecipeDef>
+	<RecipeDef ParentName="RF_BSC_MakeBulkStoneBlocksBaseElecAny10">
+		<defName>MakeStoneBlocksAny10E</defName>
+		<label>make any stone blocks (10)</label>
+		<description>Cuts rock chunks into usable stone blocks in bulk.</description>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+	</RecipeDef>
+	
+</Defs>

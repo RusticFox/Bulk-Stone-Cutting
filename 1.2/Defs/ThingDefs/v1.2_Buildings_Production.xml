@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Base Def-->	
+  <ThingDef Name="RFBuildingBaseBSC" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <Cleanliness>-5</Cleanliness>
+      <Mass>25</Mass>
+    </statBases>
+  </ThingDef>
+  <!--No Elec Workbench-->	
+ <ThingDef ParentName="RFBuildingBaseBSC">
+    <defName>RF_BSC_BulkStonecuttersTable</defName>
+    <label>Bulk stonecutting table</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workbench to cut stone chuncks to blocks in bulk.</description>
+	<graphicData>
+		<texPath>Things/Building/Production/no_elec_bulkstonecutting</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3,1)</drawSize>
+	</graphicData>
+	<costList>
+      <WoodLog>60</WoodLog>
+      <Steel>50</Steel>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+	<pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+	<inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+    <researchPrerequisites><li>RF_BSC_BulkStonecutting</li></researchPrerequisites>
+ </ThingDef>
+   <!--Elec Workbench-->	
+ <ThingDef ParentName="RFBuildingBaseBSC">
+    <defName>RF_BSC_BulkStonecuttersTableElec</defName>
+    <label>Powered bulk stonecutting table</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workbench to cut stone chuncks to blocks in bulk.</description>
+	<graphicData>
+		<texPath>Things/Building/Production/Elec_BulkStoneCutting_Bench</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(3,1)</drawSize>
+	</graphicData>
+	<costList>
+      <WoodLog>120</WoodLog>
+      <Steel>350</Steel>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+	<fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+	<pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+	<inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+            <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>250</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+		</comps>
+    <researchPrerequisites><li>RF_BSC_PoweredBulkStonecutting</li></researchPrerequisites>
+ </ThingDef>
+ 
+</Defs>
